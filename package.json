@@ -1,0 +1,37 @@
+{
+  "name": "student-management-system",
+  "version": "1.0.0",
+  "description": "Student Management System Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^45.2.3",
+    "electron-builder": "^26.18.0"
+  },
+  "type": "commonjs",
+  "build": {
+    "appId": "com.student.management",
+    "productName": "Student Management System",
+    "directories": {
+      "buildResources": "build"
+    },
+    "win": {
+      "icon": "build/student-management-icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+
+node_modules/
+dist/
+out/
+.env
+*.log
+builder-debug.yml
+builder-effective-config.yaml
+node_modules/
+dist/
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
